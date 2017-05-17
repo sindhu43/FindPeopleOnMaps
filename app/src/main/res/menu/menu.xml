@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/post_mode"
+        android:orderInCategory="100"
+        android:title="@string/post_item"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/view_mode"
+        android:orderInCategory="100"
+        android:title="@string/view_item"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/viewsubmenu1"
+                android:orderInCategory="100"
+                android:title="@string/viewAll"
+                app:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/subsubmenu1"
+                    android:orderInCategory="100"
+                    android:title="@string/listView"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/subsubmenu2"
+                    android:orderInCategory="100"
+                    android:title="@string/mapView"
+                    app:showAsAction="never"/>
+            </menu>
+            </item>
+            <item
+                android:id="@+id/viewsubmenu2"
+                android:orderInCategory="100"
+                android:title="@string/filter"
+                app:showAsAction="never">
+            </item>
+        </menu>
+    </item>
+
+</menu>
